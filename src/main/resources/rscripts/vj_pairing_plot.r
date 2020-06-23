@@ -74,7 +74,7 @@ ccols <- rep(brewer.pal(12, "Paired"), ncol(mat)/12 + 1)[1:ncol(mat)]
 names(rcols) <- sort(rownames(mat))
 names(ccols) <- sort(colnames(mat))
 
-chordDiagram(mat, annotationTrack = "grid",
+chordDiagram(mat, annotationTrack = "grid", reduce = 0, 
              grid.col = c(rcols, ccols),
              preAllocateTracks = list(track.height = 0.2), transparency = 0.5)
 
